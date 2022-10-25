@@ -1,6 +1,8 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
+@import url("https://v1.fontapi.ir/css/Shabnam");
+
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
@@ -28,7 +30,7 @@
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: "Poppins", sans-serif;
+  --body-font: Shabnam, sans-serif;
   --biggest-font-size: 1.75rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -469,6 +471,8 @@ body.light-theme {
 
 .about__description {
   margin-bottom: 2rem;
+  line-height: 30px;
+  text-align: right;
 }
 /*=============== SKILLS ===============*/
 .skills__container {
@@ -545,7 +549,7 @@ body.light-theme {
   cursor: pointer;
 }
 .services__button:hover .services__icon {
-  transform: translateX(0.25rem);
+  transform: translateX(-0.25rem);
 }
 
 .services__icon {
@@ -670,7 +674,7 @@ body.light-theme {
 }
 
 .work__button:hover .work__icon {
-  transform: translateX(0.25rem);
+  transform: translateX(-0.25rem);
 }
 
 .work__icon {
@@ -717,6 +721,7 @@ body.light-theme {
 .contact__container {
   row-gap: 3rem;
   padding-bottom: 3rem;
+  display: flex;
 }
 .contact__title {
   text-align: center;
@@ -765,7 +770,7 @@ body.light-theme {
 }
 
 .contact__button:hover .contact__button-icon {
-  transform: translateX(0.25rem);
+  transform: translateX(-0.25rem);
 }
 
 .contact__button-icon {
@@ -873,6 +878,20 @@ body.light-theme {
 ::-webkit-scrollbar-thumb:hover {
   background-color: hsl(var(--second-hue), 8%, 20%);
 }
+.contact__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 320px) {
@@ -1022,7 +1041,7 @@ body.light-theme {
     padding: 1rem 1.25rem;
   }
   .about__description {
-    padding: 0 4rem 0 0;
+    padding: 0 0rem 0 0;
     margin-bottom: 2.5rem;
   }
 
